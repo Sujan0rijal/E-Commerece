@@ -10,7 +10,7 @@ public class Coverpage extends JFrame implements ActionListener {
 
 
     public Coverpage() {
-        setTitle("Hamro Khelkud");
+        setTitle("Hamro  Khelkud");
         getContentPane().setBackground(Color.LIGHT_GRAY);
         setBackground(Color.black);
         setIconImage(new ImageIcon("sports.png").getImage());
