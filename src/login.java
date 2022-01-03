@@ -14,8 +14,13 @@ public class login extends JFrame implements ActionListener {
 
     public login() {
         setTitle("Hamro Khelkud");
+        getContentPane().setBackground(Color.LIGHT_GRAY);
+        setBackground(Color.black);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setIconImage(new ImageIcon("src/sports.png").getImage());
+
         title = new JLabel("Hamro Khelkud");
-        title.setFont(new Font("Aerial", Font.BOLD, 26));
+        title.setFont(new Font("Monoid", Font.BOLD, 26));
         title.setBounds(150,5,200,40);
         add(title);
 

@@ -3,14 +3,17 @@
 import javax.swing.*;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import static java.awt.Color.gray;
+import static java.awt.Color.white;
 
 
-public class Registration  extends JFrame {
+public class Registration  extends JFrame implements ActionListener {
     JLabel LblName,LblEmail,LblPassword,LblConfirmPassword,Lblicon,LblReg;
     JTextField TxtName,TxtEmail,TxtPassword,TxtConfirmPassword;
-    JButton Register_button;
+    JButton Register_button,button_back;
 
     Registration()
     {
@@ -68,23 +71,28 @@ public class Registration  extends JFrame {
         //Setting Button in the panel
 
         Register_button = new JButton("REGISTER");
-        Register_button.setBounds(45,300,130,30);
-        Register_button.setForeground(Color.cyan);
+        Register_button.setBounds(25,300,130,30);
+        Register_button.setForeground(Color.BLACK);
         Register_button.setFont(new Font("Arial",Font.BOLD,15));
 
-        //
+        button_back = new JButton("Back");
+        button_back.setBackground(Color.black);
+        button_back.setForeground(Color.white);
+        button_back.setBounds(0,0,100,20);
+        add(button_back);        //
 
         //Creating frame
-        setTitle("Registration");
-        setBounds(0,0,600,600);
+        setTitle("Hamro Khelkud");
+        setBounds(0,0,400,400);
+        setIconImage(new ImageIcon("src/sports.png").getImage());
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);
-        getContentPane().setBackground(gray);
+        getContentPane().setBackground(white);
 
         //Creating panel in the frame a
         JPanel panel = new JPanel();
         panel.setBackground(Color.white);
-        panel.setBounds(100,80,400,400);
+        panel.setBounds(0,0,600,400);
         panel.setLayout(null);
         //Adding lable in the panel
         panel.add(LblName);
@@ -104,6 +112,8 @@ public class Registration  extends JFrame {
         //Adding button in panel
         panel.add(Register_button);
 
+        button_back.addActionListener(this);
+        Register_button.addActionListener(this);
 
         //Adding image
         panel.add(Lblicon);
@@ -120,5 +130,18 @@ public class Registration  extends JFrame {
 
     public static void main(String[] args) {
         Registration registration = new Registration();
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == button_back){
+            new Coverpage().setVisible(true);
+            dispose();
+        }
+        if(e.getSource() == Register_button){
+            JOptionPane.showMessageDialog(null,"Register succesfull");
+            new login().setVisible(true);
+            dispose();
+        }
     }
 }
