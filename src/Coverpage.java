@@ -3,11 +3,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author ASUS
  */
-public class Coverpage extends javax.swing.JFrame {
+public class Coverpage extends javax.swing.JFrame implements ActionListener {
 
     /**
      * Creates new form NewJFrame2
@@ -33,6 +37,8 @@ public class Coverpage extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Hamro Khelkud");
+        setIconImage(new ImageIcon("src/sports.png").getImage());
 
         jPanel1.setLayout(null);
 
@@ -41,10 +47,12 @@ public class Coverpage extends javax.swing.JFrame {
         jButton1.setText("Sign Up");
         jPanel1.add(jButton1);
         jButton1.setBounds(540, 10, 80, 25);
+        jButton1.addActionListener(this);
 
         jButton2.setBackground(new java.awt.Color(0, 51, 204));
         jButton2.setFont(new java.awt.Font("Malgun Gothic", 1, 12)); // NOI18N
         jButton2.setText("Log In");
+        jButton2.addActionListener(this);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -53,7 +61,7 @@ public class Coverpage extends javax.swing.JFrame {
         jPanel1.add(jButton2);
         jButton2.setBounds(450, 10, 80, 25);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Desktop\\logo4.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("src/sports.png")); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(280, 140, 130, 130);
 
@@ -63,7 +71,7 @@ public class Coverpage extends javax.swing.JFrame {
         jPanel1.add(jLabel2);
         jLabel2.setBounds(120, 260, 430, 130);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Desktop\\sp1.jpg")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("src/MicrosoftTeams-image.png")); // NOI18N
         jPanel1.add(jLabel4);
         jLabel4.setBounds(0, 0, 650, 380);
 
@@ -127,5 +135,17 @@ public class Coverpage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if(e.getSource() == jButton2){
+            new login().setVisible(true);
+            dispose();
+        }
+        if (e.getSource() == jButton1){
+            new Registration().setVisible(true);
+            dispose();
+        }
+    }
     // End of variables declaration
 }

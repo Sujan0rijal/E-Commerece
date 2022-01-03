@@ -18,11 +18,11 @@ public class Registration  extends JFrame implements ActionListener {
     Registration()
     {
         //Adding background image
-        ImageIcon img = new ImageIcon("src/sports.png");
+        ImageIcon img = new ImageIcon("src/MicrosoftTeams-image.png");
         JLabel Lblicon = new JLabel();
-        ImageIcon imgg = new ImageIcon("src/sports.png");
+        ImageIcon imgg = new ImageIcon("src/MicrosoftTeams-image.png");
         Lblicon.setIcon(imgg);
-        Lblicon.setBounds(0,0,400,400);
+        Lblicon.setBounds(0,0,600,400);
 
 
 
@@ -83,7 +83,7 @@ public class Registration  extends JFrame implements ActionListener {
 
         //Creating frame
         setTitle("Hamro Khelkud");
-        setBounds(0,0,400,400);
+        setBounds(0,0,600,400);
         setIconImage(new ImageIcon("src/sports.png").getImage());
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);
