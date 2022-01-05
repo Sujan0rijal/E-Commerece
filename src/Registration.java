@@ -14,7 +14,7 @@ public class Registration  extends JFrame implements ActionListener {
     JLabel LblName,LblEmail,LblPassword,LblConfirmPassword,Lblicon,LblReg;
     JTextField TxtName,TxtEmail,TxtPassword,TxtConfirmPassword;
     JButton Register_button,button_back;
-
+//For Register
     Registration()
     {
         //Adding background image
