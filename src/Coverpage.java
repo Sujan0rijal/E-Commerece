@@ -61,7 +61,7 @@ public class Coverpage extends javax.swing.JFrame implements ActionListener {
         jPanel1.add(jButton2);
         jButton2.setBounds(450, 10, 80, 25);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("src/sports.png")); // NOI18N
+        //jLabel1.setIcon(new javax.swing.ImageIcon("src/MicrosoftTeams-image.png")); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(280, 140, 130, 130);
 
