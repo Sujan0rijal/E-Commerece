@@ -1,3 +1,4 @@
+package View;
 import javax.swing.*;
 
 import java.awt.*;
@@ -17,9 +18,9 @@ public class login  extends JFrame implements ActionListener {
     login()
     {
         //Adding background image
-        ImageIcon img = new ImageIcon("src/MicrosoftTeams-image.png");
+        ImageIcon img = new ImageIcon("src/view/MicrosoftTeams-image.png");
         JLabel Lblicon = new JLabel();
-        ImageIcon imgg = new ImageIcon("src/MicrosoftTeams-image.png");
+        ImageIcon imgg = new ImageIcon("src/view/MicrosoftTeams-image.png");
         Lblicon.setIcon(imgg);
         Lblicon.setBounds(0,0,600,400);
 

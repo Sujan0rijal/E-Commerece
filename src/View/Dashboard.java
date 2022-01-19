@@ -1,3 +1,4 @@
+package View;
 import javax.swing.*;
 
 import java.awt.*;
@@ -17,9 +18,9 @@ public class Dashboard  extends JFrame implements ActionListener {
     Dashboard()
     {
         //Adding background image
-        ImageIcon img = new ImageIcon("src/MicrosoftTeams-image.png");
+        ImageIcon img = new ImageIcon("src/view/MicrosoftTeams-image.png");
         JLabel Lbl_icon = new JLabel();
-        ImageIcon imgg = new ImageIcon("src/MicrosoftTeams-image.png");
+        ImageIcon imgg = new ImageIcon("src/view/MicrosoftTeams-image.png");
         Lbl_icon.setIcon(imgg);
         Lbl_icon.setBounds(0,0,600,400);
 
@@ -69,7 +70,7 @@ public class Dashboard  extends JFrame implements ActionListener {
         //Creating frame
         setTitle("Hamro Khelkud");
         setBounds(0,0,600,400);
-        setIconImage(new ImageIcon("src/sports.png").getImage());
+        setIconImage(new ImageIcon("src/view/sports.png").getImage());
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);
         getContentPane().setBackground(white);
