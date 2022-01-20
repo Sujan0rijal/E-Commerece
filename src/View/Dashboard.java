@@ -3,11 +3,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package View;
+
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author ASUS
  */
-public class Dashboard extends javax.swing.JFrame {
+public class Dashboard extends javax.swing.JFrame implements ActionListener {
 
     /**
      * Creates new form Dashboard1
@@ -27,72 +32,79 @@ public class Dashboard extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        Football_button = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        Cricket_button = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        Table_tennis_button = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
+        Basketball_button = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
+        Volleyball_button = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
+        Back_button = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Hamro Khelkud");
+        setIconImage(new ImageIcon("src/View/photo/sports.png").getImage());
 
         jPanel1.setLayout(null);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\pk1.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("src/view/photo/dashboard/pk1.png")); // NOI18N
         jPanel1.add(jLabel3);
         jLabel3.setBounds(10, 110, 100, 100);
 
-        jButton1.setForeground(new java.awt.Color(0, 0, 204));
-        jButton1.setText("Football");
-        jPanel1.add(jButton1);
-        jButton1.setBounds(10, 250, 90, 30);
+        Football_button.setForeground(new java.awt.Color(0, 0, 204));
+        Football_button.setText("Football");
+        Football_button.addActionListener(this);
+        jPanel1.add(Football_button);
+        Football_button.setBounds(10, 250, 90, 30);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\aw.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("src/view/photo/dashboard/aw.jpg")); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(140, 120, 90, 90);
 
-        jButton2.setForeground(new java.awt.Color(0, 0, 204));
-        jButton2.setText("Cricket");
-        jPanel1.add(jButton2);
-        jButton2.setBounds(130, 250, 110, 30);
+        Cricket_button.setForeground(new java.awt.Color(0, 0, 204));
+        Cricket_button.setText("Cricket");
+        jPanel1.add(Cricket_button);
+        Cricket_button.setBounds(130, 250, 110, 30);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\bt.jpg")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("src/view/photo/dashboard/table_tennis.jpg")); // NOI18N
         jPanel1.add(jLabel4);
         jLabel4.setBounds(280, 120, 110, 100);
 
-        jButton3.setForeground(new java.awt.Color(0, 0, 204));
-        jButton3.setText("Batminton");
-        jPanel1.add(jButton3);
-        jButton3.setBounds(280, 250, 110, 30);
+        Table_tennis_button.setForeground(new java.awt.Color(0, 0, 204));
+        Table_tennis_button.setText("Table Tennis");
+        Table_tennis_button.addActionListener(this);
+        jPanel1.add(Table_tennis_button);
+        Table_tennis_button.setBounds(280, 250, 110, 30);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\bk1.png")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon("src/view/photo/dashboard/bk1.png")); // NOI18N
         jPanel1.add(jLabel5);
         jLabel5.setBounds(430, 120, 100, 100);
 
-        jButton4.setForeground(new java.awt.Color(0, 0, 204));
-        jButton4.setText("Basketball");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        Basketball_button.setForeground(new java.awt.Color(0, 0, 204));
+        Basketball_button.setText("Basketball");
+        Basketball_button.addActionListener(this);
+
+        Basketball_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton4);
-        jButton4.setBounds(430, 250, 110, 30);
+        jPanel1.add(Basketball_button);
+        Basketball_button.setBounds(430, 250, 110, 30);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\ay.png")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon("src/view/photo/dashboard/ay.png")); // NOI18N
         jPanel1.add(jLabel6);
         jLabel6.setBounds(580, 130, 100, 90);
 
-        jButton5.setForeground(new java.awt.Color(0, 0, 204));
-        jButton5.setText("Volleyball");
-        jPanel1.add(jButton5);
-        jButton5.setBounds(580, 250, 110, 30);
+        Volleyball_button.setForeground(new java.awt.Color(0, 0, 204));
+        Volleyball_button.setText("Volleyball");
+        Volleyball_button.addActionListener(this);
+        jPanel1.add(Volleyball_button);
+        Volleyball_button.setBounds(580, 250, 110, 30);
 
         jLabel7.setFont(new java.awt.Font("Snap ITC", 1, 36)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(51, 153, 0));
@@ -100,13 +112,15 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel1.add(jLabel7);
         jLabel7.setBounds(150, 30, 410, 60);
 
-        jButton6.setBackground(new java.awt.Color(204, 204, 204));
-        jButton6.setForeground(new java.awt.Color(0, 0, 255));
-        jButton6.setText("Back");
-        jPanel1.add(jButton6);
-        jButton6.setBounds(620, 10, 73, 23);
+        Back_button.setBackground(new java.awt.Color(204, 204, 204));
+        Back_button.setForeground(new java.awt.Color(0, 0, 255));
+        Back_button.setText("Back");
+        Back_button.addActionListener(this);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\sport1.jpg")); // NOI18N
+        jPanel1.add(Back_button);
+        Back_button.setBounds(620, 10, 73, 23);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("src/view/photo/dashboard/sports1.jfif")); // NOI18N
         jPanel1.add(jLabel2);
         jLabel2.setBounds(0, -10, 710, 340);
 
@@ -164,12 +178,12 @@ public class Dashboard extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton Football_button;
+    private javax.swing.JButton Cricket_button;
+    private javax.swing.JButton Table_tennis_button;
+    private javax.swing.JButton Basketball_button;
+    private javax.swing.JButton Volleyball_button;
+    private javax.swing.JButton Back_button;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -178,5 +192,33 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if(e.getSource()== Volleyball_button){
+            new Volleyball().setVisible(true);
+            dispose();
+        }
+        if(e.getSource()== Back_button){
+            new login().setVisible(true);
+            dispose();
+        }
+        if(e.getSource()==Football_button){
+            new football().setVisible(true);
+            dispose();
+        }
+        if(e.getSource()== Table_tennis_button){
+            new Table_tennis().setVisible(true);
+            dispose();
+        }
+        if(e.getSource()== Basketball_button){
+            new Dashboard().setVisible(true);
+            dispose();
+        }
+        if(e.getSource()== Cricket_button){
+            new Dashboard().setVisible(true);
+            dispose();
+        }
+    }
     // End of variables declaration
 }

@@ -93,7 +93,7 @@ public class Table_tennis extends javax.swing.JFrame implements ActionListener {
             }
         });
         jPanel1.add(ball);
-        ball.setBounds(300, 190, 49, 23);
+        ball.setBounds(300, 190, 60, 23);
 
         shoe_text.setIcon(new javax.swing.ImageIcon("src/view/photo/table_tennis/Table_tennis_shoe.jpg")); // NOI18N
         jPanel1.add(shoe_text);
