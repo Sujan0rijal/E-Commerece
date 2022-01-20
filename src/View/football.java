@@ -12,7 +12,8 @@ import java.awt.event.ActionListener;
  *
  * @author GP65
  */
-public class football extends javax.swing.JFrame implements ActionListener {
+public class
+football extends javax.swing.JFrame implements ActionListener {
 
     /**
      * Creates new form java
