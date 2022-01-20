@@ -8,16 +8,16 @@ public class Customer {
 
     public Customer(String username,String password,String email)
     {
-        this.email = email;
         this.username = username;
+        this.email = email;
         this.password = password;
 
     }
     public Customer(int custId,String email,String username,String password)
     {
         this.custId = custId;
-        this.email = email;
         this.username = username;
+        this.email = email;
         this.password = password;
     }
     public int getCustId() {
@@ -40,7 +40,7 @@ public class Customer {
     }
 
     
-        public String getUsername() {
+    public String getUsername() {
             return username;
     }
 
@@ -54,7 +54,7 @@ public class Customer {
         return password;
     }
 
-     public void setPassword(String password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 

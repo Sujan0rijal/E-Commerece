@@ -9,7 +9,7 @@ public class CustomerController {
 
     public int registerCustomer(Customer customer){
        String query;
-       query = "insert into customer_table(username,email,password)values('"+
+       query = "insert into customer_table(username,email,passwordkey)values('"+
        customer.getUsername()+"','"+
        customer.getemail()+"','"+
        customer.getPassword()+"');";

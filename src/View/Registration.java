@@ -140,13 +140,13 @@ public class Registration  extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        String username, email, password , confirmPassword;
+        String username, email, passwordkey , confirmPassword;
 
         username = TxtName.getText();
         email = TxtEmail.getText();
-        password = TxtPassword.getText();
+        passwordkey = TxtPassword.getText();
         confirmPassword = TxtConfirmPassword.getText();
-        //System.out.println(username + " " + email);
+        System.out.println(username + " " + email);
 
         if (e.getSource() == button_back){
             new Coverpage().setVisible(true);
@@ -159,10 +159,10 @@ public class Registration  extends JFrame implements ActionListener {
             {
                 JOptionPane.showMessageDialog(null,"Email is empty");
 
-            }else if (password.equals(confirmPassword)){
+            }else if (passwordkey.equals(confirmPassword)){
 
                 Customer customer = 
-                new Customer(username,password,password);
+                new Customer(username,passwordkey,email);
     
                 CustomerController customerControler = new CustomerController();
                 int insert = customerControler.registerCustomer(customer);
