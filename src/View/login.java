@@ -18,9 +18,9 @@ public class login  extends JFrame implements ActionListener {
     login()
     {
         //Adding background image
-        ImageIcon img = new ImageIcon("src/view/MicrosoftTeams-image.png");
+        ImageIcon img = new ImageIcon("src/view/photo/MicrosoftTeams-image.png");
         JLabel Lblicon = new JLabel();
-        ImageIcon imgg = new ImageIcon("src/view/MicrosoftTeams-image.png");
+        ImageIcon imgg = new ImageIcon("src/view/photo/MicrosoftTeams-image.png");
         Lblicon.setIcon(imgg);
         Lblicon.setBounds(0,0,600,400);
 
@@ -70,7 +70,7 @@ public class login  extends JFrame implements ActionListener {
         //Creating frame
         setTitle("Hamro Khelkud");
         setBounds(0,0,600,400);
-        setIconImage(new ImageIcon("src/sports.png").getImage());
+        setIconImage(new ImageIcon("src/view/photo/sports.png").getImage());
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);
         getContentPane().setBackground(white);

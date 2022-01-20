@@ -27,7 +27,7 @@ public class Coverpage extends javax.swing.JFrame implements ActionListener {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Hamro Khelkud");
-        setIconImage(new ImageIcon("src/view/sports.png").getImage());
+        setIconImage(new ImageIcon("src/view/photo/sports.png").getImage());
 
         jPanel1.setLayout(null);
 
@@ -60,7 +60,7 @@ public class Coverpage extends javax.swing.JFrame implements ActionListener {
         jPanel1.add(jLabel2);
         jLabel2.setBounds(120, 260, 430, 130);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("src/view/MicrosoftTeams-image.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("src/view/photo/MicrosoftTeams-image.png")); // NOI18N
         jPanel1.add(jLabel4);
         jLabel4.setBounds(0, 0, 650, 380);
 
