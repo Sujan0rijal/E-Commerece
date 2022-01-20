@@ -136,7 +136,7 @@ public class Dashboard  extends JFrame implements ActionListener {
             dispose();
         }
         if (e.getSource() == button_tabletennis){
-            new Dashboard().setVisible(true);
+            new Table_tennis().setVisible(true);
             dispose();
         }
         if (e.getSource() == button_golf){
