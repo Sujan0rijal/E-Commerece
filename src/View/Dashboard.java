@@ -144,7 +144,7 @@ public class Dashboard  extends JFrame implements ActionListener {
             dispose();
         }
         if (e.getSource() == button_volleyball){
-            new Dashboard().setVisible(true);
+            new Volleyball().setVisible(true);
             dispose();
         }
     }
