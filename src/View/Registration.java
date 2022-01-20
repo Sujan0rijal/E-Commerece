@@ -3,6 +3,9 @@ package View;
 
 import javax.swing.*;
 
+import Controller.CustomerController;
+import model.Customer;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -13,7 +16,8 @@ import static java.awt.Color.white;
 
 public class Registration  extends JFrame implements ActionListener {
     JLabel LblName,LblEmail,LblPassword,LblConfirmPassword,Lblicon,LblReg;
-    JTextField TxtName,TxtEmail,TxtPassword,TxtConfirmPassword;
+    JTextField TxtName,TxtEmail;
+    JPasswordField TxtPassword,TxtConfirmPassword;
     JButton Register_button,button_back;
 //For Register
     Registration()
@@ -63,9 +67,9 @@ public class Registration  extends JFrame implements ActionListener {
         TxtName.setBounds(20,70,200,30);
         TxtEmail = new JTextField();
         TxtEmail.setBounds(20,130,200,30);
-        TxtPassword = new JTextField();
+        TxtPassword = new JPasswordField();
         TxtPassword.setBounds(20,190,200,30);
-        TxtConfirmPassword = new JTextField();
+        TxtConfirmPassword = new JPasswordField();
         TxtConfirmPassword.setBounds(20,250,200,30);
 
 
@@ -136,14 +140,46 @@ public class Registration  extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        String username, email, password , confirmPassword;
+
+        username = TxtName.getText();
+        email = TxtEmail.getText();
+        password = TxtPassword.getText();
+        confirmPassword = TxtConfirmPassword.getText();
+        //System.out.println(username + " " + email);
+
         if (e.getSource() == button_back){
             new Coverpage().setVisible(true);
             dispose();
         }
         if(e.getSource() == Register_button){
-            JOptionPane.showMessageDialog(null,"Register succesfull");
-            new login().setVisible(true);
-            dispose();
+            if(TxtName.getText().equals("")){
+                JOptionPane.showMessageDialog(null,"Username empty");
+            }else if(TxtEmail.getText().equals(""))
+            {
+                JOptionPane.showMessageDialog(null,"Email is empty");
+
+            }else if (password.equals(confirmPassword)){
+
+                Customer customer = 
+                new Customer(username,password,password);
+    
+                CustomerController customerControler = new CustomerController();
+                int insert = customerControler.registerCustomer(customer);
+    
+                if(insert>0)
+                {
+                    JOptionPane.showMessageDialog(null,"succussfully registered");
+                }
+                else{
+                    JOptionPane.showMessageDialog(null,"Failed to register");
+                    
+                }
+                new login().setVisible(true);
+                dispose();
+            }
+
+         
         }
     }
 }

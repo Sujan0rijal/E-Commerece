@@ -15,7 +15,7 @@ public DbConnection() {
         Class.forName("com.mysql.cj.jdbc.Driver");
         //create the connection object
         con = DriverManager.getConnection(
-            "jdbc:mysql://localhost:3306/e_Commerce?characterEncoding=utf8&useSSL=false&autoReconnect=true",
+            "jdbc:mysql://localhost:3306/e_commerce?characterEncoding=utf8&useSSL=false&autoReconnect=true",
             username,password);
         if (con != null){
             System.out.print("Connected to E-commerce database");
