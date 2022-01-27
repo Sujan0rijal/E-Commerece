@@ -1,7 +1,7 @@
 package Database;
 import java.sql.*;
 
-public class DbConnection{
+public  class DbConnection{
     Connection con;
     Statement st;
     ResultSet rows;
@@ -45,7 +45,7 @@ public ResultSet retrive(String query)
 {
     try {
         rows = st.executeQuery(query);
-        con.close();
+        // con.close();
     }catch ( SQLException throwables)
     {
         throwables.printStackTrace();

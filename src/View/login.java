@@ -1,17 +1,25 @@
 package View;
 import javax.swing.*;
+import Database.DbConnection;
 
+import com.mysql.cj.protocol.Resultset;
+
+import Database.DbConnection;
+import javax.swing.JOptionPane;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import static java.awt.Color.red;
 import static java.awt.Color.white;
+import java.sql.Statement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 
 public class login  extends JFrame implements ActionListener {
     JLabel Username,Password,login;
-    JTextField textusername,textpassword;
+    JTextField textusername;
+    JPasswordField textpassword;
     JButton buttonlogin,button_back;
     JCheckBox checkBox;
 
@@ -48,7 +56,7 @@ public class login  extends JFrame implements ActionListener {
 
         textusername = new JTextField();
         textusername.setBounds(200,130,200,30);
-        textpassword = new JTextField();
+        textpassword = new JPasswordField();
         textpassword.setBounds(200,190,200,30);
         checkBox = new JCheckBox("Check password");
         checkBox.setBounds(200,220,100,30);
@@ -117,13 +125,53 @@ public class login  extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        
         if (e.getSource() == button_back){
             new Coverpage().setVisible(true);
             dispose();
-        }
+    }
+       
         if(e.getSource() == buttonlogin){
-            JOptionPane.showMessageDialog(null,"login as " + textusername);
-            dispose();
+            
+            try {
+                DbConnection db = new DbConnection();
+                ResultSet rows=db.retrive("Select * from customer_table where username='"+textusername.getText()+"' and passwordkey='"+textpassword.getText()+"'");
+
+            
+            System.out.println(textusername.getText()+ " " + textpassword.getText());
+            // System.out.println(rows.getString(1));
+            // System.out.println(rows.next());
+            if (rows.next()){
+                System.out.println(rows.getString("username"));
+                new Dashboard().setVisible(true);
+                this.dispose();
+
+            }else{
+                JOptionPane.showMessageDialog(null, "Invalid user");
+            }
+                // try{
+                //     if (rows.next()){
+                //     new Dashboard().setVisible(true);
+                //     }
+                // }
+                // catch(Exception b){
+                //     JOptionPane.showMessageDialog(null, "Invalid usern");
+    
+                // }
+            } catch (SQLException e1) {
+                // TODO Auto-generated catch block
+                e1.printStackTrace();
+            }
+           
+
+     
+      
         }
     }
+        
+    
+
+    // // private ResultSet retrive(String string) {
+    // //     return null;
+    // }
 }

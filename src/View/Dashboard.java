@@ -8,10 +8,6 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-/**
- *
- * @author ASUS
- */
 public class Dashboard extends javax.swing.JFrame implements ActionListener {
 
     /**
