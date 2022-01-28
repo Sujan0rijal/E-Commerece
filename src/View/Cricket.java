@@ -3,11 +3,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package View;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author ASUS
  */
-public class Cricket extends javax.swing.JFrame {
+public class Cricket extends javax.swing.JFrame implements ActionListener {
 
     /**
      * Creates new form Cricket
@@ -57,6 +61,7 @@ public class Cricket extends javax.swing.JFrame {
         Backbutton.setBackground(new java.awt.Color(153, 153, 153));
         Backbutton.setForeground(new java.awt.Color(0, 0, 153));
         Backbutton.setText("Back");
+        Backbutton.addActionListener(this);
         jPanel2.add(Backbutton);
         Backbutton.setBounds(590, 10, 73, 23);
 
@@ -241,6 +246,14 @@ public class Cricket extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource()==Backbutton){
+            new Dashboard().setVisible(true);
+            dispose();
+        }
+    }
     // End of variables declaration
 }
 

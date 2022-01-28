@@ -4,11 +4,14 @@ package View;
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author ASUS
  */
-public class Batminton extends javax.swing.JFrame {
+public class Batminton extends javax.swing.JFrame implements ActionListener {
 
     /**
      * Creates new form Batminton
@@ -108,6 +111,7 @@ public class Batminton extends javax.swing.JFrame {
         Backbutton.setBackground(new java.awt.Color(153, 153, 153));
         Backbutton.setForeground(new java.awt.Color(0, 0, 153));
         Backbutton.setText("Back");
+        Backbutton.addActionListener(this);
         jPanel2.add(Backbutton);
         Backbutton.setBounds(733, 10, 70, 20);
 
@@ -233,5 +237,13 @@ public class Batminton extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource()==Backbutton){
+            new Dashboard().setVisible(true);
+            dispose();
+        }
+    }
     // End of variables declaration
 }

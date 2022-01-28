@@ -63,6 +63,7 @@ public class Dashboard extends javax.swing.JFrame implements ActionListener {
 
         Cricket_button.setForeground(new java.awt.Color(0, 0, 204));
         Cricket_button.setText("Cricket");
+        Cricket_button.addActionListener(this);
         jPanel1.add(Cricket_button);
         Cricket_button.setBounds(130, 250, 110, 30);
 

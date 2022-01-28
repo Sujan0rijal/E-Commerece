@@ -147,6 +147,7 @@ public class  Football extends javax.swing.JFrame implements ActionListener {
         Backbutton.setBackground(new java.awt.Color(153, 153, 153));
         Backbutton.setForeground(new java.awt.Color(0, 0, 153));
         Backbutton.setText("Back");
+        Backbutton.addActionListener(this);
         Backbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BackbuttonActionPerformed(evt);
