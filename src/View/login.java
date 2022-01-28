@@ -2,7 +2,7 @@ package View;
 import javax.swing.*;
 import Database.DbConnection;
 
-import com.mysql.cj.protocol.Resultset;
+//import com.mysql.cj.protocol.Resultset;
 
 import Database.DbConnection;
 import javax.swing.JOptionPane;
