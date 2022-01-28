@@ -1,10 +1,8 @@
-package View;
-
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-
+package View;
 /**
  *
  * @author ASUS
@@ -29,7 +27,7 @@ public class Cricket extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        Backbutton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -56,11 +54,11 @@ public class Cricket extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(102, 102, 102));
         jPanel2.setLayout(null);
 
-        jButton1.setBackground(new java.awt.Color(153, 153, 153));
-        jButton1.setForeground(new java.awt.Color(0, 0, 153));
-        jButton1.setText("Back");
-        jPanel2.add(jButton1);
-        jButton1.setBounds(590, 10, 73, 23);
+        Backbutton.setBackground(new java.awt.Color(153, 153, 153));
+        Backbutton.setForeground(new java.awt.Color(0, 0, 153));
+        Backbutton.setText("Back");
+        jPanel2.add(Backbutton);
+        Backbutton.setBounds(590, 10, 73, 23);
 
         jLabel1.setFont(new java.awt.Font("Snap ITC", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 153, 153));
@@ -222,7 +220,7 @@ public class Cricket extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton Backbutton;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;

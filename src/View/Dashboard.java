@@ -32,7 +32,7 @@ public class Dashboard extends javax.swing.JFrame implements ActionListener {
         jLabel1 = new javax.swing.JLabel();
         Cricket_button = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
-        Table_tennis_button = new javax.swing.JButton();
+        batminton_button = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         Basketball_button = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
@@ -66,15 +66,15 @@ public class Dashboard extends javax.swing.JFrame implements ActionListener {
         jPanel1.add(Cricket_button);
         Cricket_button.setBounds(130, 250, 110, 30);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("src/view/photo/dashboard/table_tennis.jpg")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("src/view/photo/dashboard/bt.jpg")); // NOI18N
         jPanel1.add(jLabel4);
         jLabel4.setBounds(280, 120, 110, 100);
 
-        Table_tennis_button.setForeground(new java.awt.Color(0, 0, 204));
-        Table_tennis_button.setText("Table Tennis");
-        Table_tennis_button.addActionListener(this);
-        jPanel1.add(Table_tennis_button);
-        Table_tennis_button.setBounds(280, 250, 110, 30);
+        batminton_button.setForeground(new java.awt.Color(0, 0, 204));
+        batminton_button.setText("Batminton");
+        batminton_button.addActionListener(this);
+        jPanel1.add(batminton_button);
+        batminton_button.setBounds(280, 250, 110, 30);
 
         jLabel5.setIcon(new javax.swing.ImageIcon("src/view/photo/dashboard/bk1.png")); // NOI18N
         jPanel1.add(jLabel5);
@@ -176,7 +176,7 @@ public class Dashboard extends javax.swing.JFrame implements ActionListener {
     // Variables declaration - do not modify
     private javax.swing.JButton Football_button;
     private javax.swing.JButton Cricket_button;
-    private javax.swing.JButton Table_tennis_button;
+    private javax.swing.JButton batminton_button;
     private javax.swing.JButton Basketball_button;
     private javax.swing.JButton Volleyball_button;
     private javax.swing.JButton Back_button;
@@ -200,19 +200,19 @@ public class Dashboard extends javax.swing.JFrame implements ActionListener {
             dispose();
         }
         if(e.getSource()==Football_button){
-            new football().setVisible(true);
+            new Football().setVisible(true);
             dispose();
         }
-        if(e.getSource()== Table_tennis_button){
-            new Table_tennis().setVisible(true);
+        if(e.getSource()== batminton_button){
+            new Batminton().setVisible(true);
             dispose();
         }
         if(e.getSource()== Basketball_button){
-            new Dashboard().setVisible(true);
+            new Basketball().setVisible(true);
             dispose();
         }
         if(e.getSource()== Cricket_button){
-            new Dashboard().setVisible(true);
+            new Cricket().setVisible(true);
             dispose();
         }
     }

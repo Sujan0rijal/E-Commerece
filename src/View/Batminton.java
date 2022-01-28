@@ -1,5 +1,4 @@
 package View;
-
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -39,7 +38,7 @@ public class Batminton extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jButton5 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        jButton6 = new javax.swing.JButton();
+        Backbutton = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -106,11 +105,11 @@ public class Batminton extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(102, 102, 102));
         jPanel2.setLayout(null);
 
-        jButton6.setBackground(new java.awt.Color(153, 153, 153));
-        jButton6.setForeground(new java.awt.Color(0, 0, 153));
-        jButton6.setText("Back");
-        jPanel2.add(jButton6);
-        jButton6.setBounds(733, 10, 70, 20);
+        Backbutton.setBackground(new java.awt.Color(153, 153, 153));
+        Backbutton.setForeground(new java.awt.Color(0, 0, 153));
+        Backbutton.setText("Back");
+        jPanel2.add(Backbutton);
+        Backbutton.setBounds(733, 10, 70, 20);
 
         jLabel5.setFont(new java.awt.Font("Snap ITC", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 153, 153));
@@ -213,12 +212,12 @@ public class Batminton extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify
+    private javax.swing.JButton Backbutton;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -236,4 +235,3 @@ public class Batminton extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     // End of variables declaration
 }
-
