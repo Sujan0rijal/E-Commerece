@@ -48,7 +48,7 @@ public class Volleyball extends javax.swing.JFrame {
 
         jPanel1.setLayout(null);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\012.jpg")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("src//view//photo//volleyball//012.jpg")); // NOI18N
         jPanel1.add(jLabel2);
         jLabel2.setBounds(30, 150, 120, 110);
 
@@ -58,7 +58,7 @@ public class Volleyball extends javax.swing.JFrame {
         jPanel1.add(jButton1);
         jButton1.setBounds(30, 330, 110, 30);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\013.jpg")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("src//view//photo//volleyball//013.jpg")); // NOI18N
         jPanel1.add(jLabel3);
         jLabel3.setBounds(200, 150, 120, 110);
 
@@ -68,7 +68,7 @@ public class Volleyball extends javax.swing.JFrame {
         jPanel1.add(jButton2);
         jButton2.setBounds(200, 330, 110, 30);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\014.jpg")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("src//view//photo//volleyball//014.jpg")); // NOI18N
         jPanel1.add(jLabel4);
         jLabel4.setBounds(380, 150, 130, 110);
 
@@ -78,7 +78,7 @@ public class Volleyball extends javax.swing.JFrame {
         jPanel1.add(jButton3);
         jButton3.setBounds(400, 330, 110, 30);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\17.jpg")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon("src//view//photo//volleyball//17.jpg")); // NOI18N
         jPanel1.add(jLabel5);
         jLabel5.setBounds(570, 150, 150, 110);
 
@@ -136,7 +136,7 @@ public class Volleyball extends javax.swing.JFrame {
         jPanel1.add(jLabel11);
         jLabel11.setBounds(590, 290, 110, 20);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\10.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("src//view//photo//volleyball//10.jpg")); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 740, 430);
 

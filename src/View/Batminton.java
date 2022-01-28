@@ -52,7 +52,7 @@ public class Batminton extends javax.swing.JFrame {
 
         jPanel1.setLayout(null);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\18.jpg")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("src//view//photo//Batminton//18.jpg")); // NOI18N
         jPanel1.add(jLabel2);
         jLabel2.setBounds(20, 150, 100, 120);
 
@@ -62,7 +62,7 @@ public class Batminton extends javax.swing.JFrame {
         jPanel1.add(jButton1);
         jButton1.setBounds(20, 320, 110, 30);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\a6.jpg")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("src//view//photo//Batminton//a6.jpg")); // NOI18N
         jPanel1.add(jLabel3);
         jLabel3.setBounds(660, 160, 120, 110);
 
@@ -72,7 +72,7 @@ public class Batminton extends javax.swing.JFrame {
         jPanel1.add(jButton2);
         jButton2.setBounds(160, 320, 120, 30);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\03.jpg")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("src//view//photo//Batminton//03.jpg")); // NOI18N
         jPanel1.add(jLabel4);
         jLabel4.setBounds(330, 150, 100, 120);
 
@@ -82,7 +82,7 @@ public class Batminton extends javax.swing.JFrame {
         jPanel1.add(jButton3);
         jButton3.setBounds(320, 320, 120, 30);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\05.jpg")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon("src//view//photo//Batminton//05.jpg")); // NOI18N
         jPanel1.add(jLabel6);
         jLabel6.setBounds(480, 150, 120, 120);
 
@@ -92,7 +92,7 @@ public class Batminton extends javax.swing.JFrame {
         jPanel1.add(jButton4);
         jButton4.setBounds(490, 320, 110, 30);
 
-        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\09.jpg")); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon("src//view//photo//Batminton//09.jpg")); // NOI18N
         jPanel1.add(jLabel7);
         jLabel7.setBounds(160, 150, 120, 110);
 
@@ -158,7 +158,7 @@ public class Batminton extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\a2.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("src//view//photo//Batminton//a2.jpg")); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(-1, -6, 820, 470);
 

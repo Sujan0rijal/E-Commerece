@@ -57,11 +57,11 @@ public class Basketball extends javax.swing.JFrame {
         jPanel1.add(jButton1);
         jButton1.setBounds(20, 220, 90, 30);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\3.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("src//view//photo//Basketball//3.jpg")); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(20, 90, 100, 100);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\135.jpg")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("src//view//photo//Basketball//135.jpg")); // NOI18N
         jPanel1.add(jLabel4);
         jLabel4.setBounds(170, 80, 110, 120);
 
@@ -71,7 +71,7 @@ public class Basketball extends javax.swing.JFrame {
         jPanel1.add(jButton2);
         jButton2.setBounds(170, 220, 100, 30);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\15.jpg")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon("src//view//photo//Basketball//15.jpg")); // NOI18N
         jPanel1.add(jLabel5);
         jLabel5.setBounds(320, 70, 120, 130);
 
@@ -86,7 +86,7 @@ public class Basketball extends javax.swing.JFrame {
         jPanel1.add(jButton3);
         jButton3.setBounds(330, 220, 100, 30);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\16.jpg")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("src//view//photo//Basketball//16.jpg")); // NOI18N
         jPanel1.add(jLabel3);
         jLabel3.setBounds(490, 90, 100, 90);
 
@@ -96,7 +96,7 @@ public class Basketball extends javax.swing.JFrame {
         jPanel1.add(jButton4);
         jButton4.setBounds(490, 220, 100, 30);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\11.jpg")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon("src//view//photo//Basketball//11.jpg")); // NOI18N
         jPanel1.add(jLabel6);
         jLabel6.setBounds(250, 250, 110, 110);
 
@@ -167,7 +167,7 @@ public class Basketball extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 153));
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\a5.jpg")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("src//view//photo//Basketball//a5.jpg")); // NOI18N
         jPanel1.add(jLabel2);
         jLabel2.setBounds(-1, -1, 610, 420);
 

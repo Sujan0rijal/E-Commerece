@@ -75,7 +75,7 @@ public class Cricket extends javax.swing.JFrame {
         jPanel1.add(jLabel3);
         jLabel3.setBounds(250, 50, 150, 40);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\12.jpg")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("src//view//photo//Cricket//12.jpg")); // NOI18N
         jPanel1.add(jLabel4);
         jLabel4.setBounds(10, 130, 110, 110);
 
@@ -85,7 +85,7 @@ public class Cricket extends javax.swing.JFrame {
         jPanel1.add(jButton2);
         jButton2.setBounds(20, 300, 100, 30);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\02.jpg")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon("src//view//photo//Cricket//02.jpg")); // NOI18N
         jPanel1.add(jLabel5);
         jLabel5.setBounds(150, 130, 90, 110);
 
@@ -95,7 +95,7 @@ public class Cricket extends javax.swing.JFrame {
         jPanel1.add(jButton3);
         jButton3.setBounds(150, 300, 90, 30);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\022.jpg")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon("src//view//photo//Cricket//022.jpg")); // NOI18N
         jPanel1.add(jLabel6);
         jLabel6.setBounds(270, 130, 100, 100);
 
@@ -105,7 +105,7 @@ public class Cricket extends javax.swing.JFrame {
         jPanel1.add(jButton4);
         jButton4.setBounds(270, 300, 100, 30);
 
-        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\06.jpg")); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon("src//view//photo//Cricket//06.jpg")); // NOI18N
         jPanel1.add(jLabel7);
         jLabel7.setBounds(400, 130, 90, 98);
 
@@ -120,7 +120,7 @@ public class Cricket extends javax.swing.JFrame {
         jPanel1.add(jButton5);
         jButton5.setBounds(410, 300, 100, 30);
 
-        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\04.jpg")); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon("src//view//photo//Cricket//04.jpg")); // NOI18N
         jPanel1.add(jLabel8);
         jLabel8.setBounds(540, 130, 110, 100);
 
@@ -162,7 +162,7 @@ public class Cricket extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(51, 51, 255));
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\00.jpg")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("src//view//photo//Cricket//00.jpg")); // NOI18N
         jPanel1.add(jLabel2);
         jLabel2.setBounds(0, 40, 670, 350);
 

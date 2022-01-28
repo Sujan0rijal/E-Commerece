@@ -58,7 +58,7 @@ public class  Football extends javax.swing.JFrame implements ActionListener {
 
         jPanel1.setLayout(null);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\fd.jpg")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("src//view//photo//Football//fd.jpg")); // NOI18N
         jPanel1.add(jLabel2);
         jLabel2.setBounds(200, 110, 90, 90);
 
@@ -73,7 +73,7 @@ public class  Football extends javax.swing.JFrame implements ActionListener {
         jPanel1.add(jButton1);
         jButton1.setBounds(190, 260, 110, 30);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\a11.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("src//view//photo//Football//a11.png")); // NOI18N
         jPanel1.add(jLabel3);
         jLabel3.setBounds(40, 110, 90, 110);
 
@@ -84,7 +84,7 @@ public class  Football extends javax.swing.JFrame implements ActionListener {
         jPanel1.add(jButton2);
         jButton2.setBounds(30, 260, 110, 30);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\an.jpg")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("src//view//photo//Football//an.jpg")); // NOI18N
         jPanel1.add(jLabel4);
         jLabel4.setBounds(370, 110, 90, 90);
 
@@ -94,11 +94,11 @@ public class  Football extends javax.swing.JFrame implements ActionListener {
         jPanel1.add(jButton3);
         jButton3.setBounds(360, 260, 120, 30);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\ab.jpg")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon("src//view//photo//Football//ab.jpg")); // NOI18N
         jPanel1.add(jLabel5);
         jLabel5.setBounds(110, 300, 90, 100);
 
-        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\ap.jpg")); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon("src//view//photo//Football//ap.jpg")); // NOI18N
         jPanel1.add(jLabel7);
         jLabel7.setBounds(540, 110, 100, 90);
 
@@ -108,7 +108,7 @@ public class  Football extends javax.swing.JFrame implements ActionListener {
         jPanel1.add(jButton4);
         jButton4.setBounds(540, 260, 100, 30);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\a3.jpg")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon("src//view//photo//Football//a3.jpg")); // NOI18N
         jPanel1.add(jLabel6);
         jLabel6.setBounds(270, 310, 120, 80);
 
@@ -196,7 +196,7 @@ public class  Football extends javax.swing.JFrame implements ActionListener {
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 153));
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\ah.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("src//view//photo//Football//ah.jpg")); // NOI18N
         jLabel1.setText("BUY");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 660, 480);
