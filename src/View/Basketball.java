@@ -7,6 +7,8 @@ package View;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author ASUS
@@ -112,7 +114,12 @@ public class Basketball extends javax.swing.JFrame implements ActionListener {
 
         jPanel2.setBackground(new java.awt.Color(102, 102, 102));
         jPanel2.setLayout(null);
-
+        //Addding the action listner
+        jButton1.addActionListener(this);
+        jButton2.addActionListener(this);
+        jButton3.addActionListener(this);
+        jButton4.addActionListener(this);
+        jButton5.addActionListener(this);
         Backbutton.setBackground(new java.awt.Color(153, 153, 153));
         Backbutton.setForeground(new java.awt.Color(0, 0, 153));
         Backbutton.setText("Back");
@@ -261,6 +268,22 @@ public class Basketball extends javax.swing.JFrame implements ActionListener {
         if (e.getSource()==Backbutton){
             new Dashboard().setVisible(true);
             dispose();
+        }
+        if (e.getSource()==jButton1){
+            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+            System.out.print("button 1");
+        }
+        if (e.getSource()==jButton2){
+            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+        }
+        if (e.getSource()==jButton2){
+            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+        }
+        if (e.getSource()==jButton2){
+            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+        }
+        if (e.getSource()==jButton2){
+            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
         }
     }
     // End of variables declaration
