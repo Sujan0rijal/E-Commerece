@@ -7,6 +7,8 @@ package View;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author ASUS
@@ -54,6 +56,12 @@ public class Batminton extends javax.swing.JFrame implements ActionListener {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setLayout(null);
+         //Added button listner
+         jButton1.addActionListener(this);
+         jButton2.addActionListener(this);
+         jButton3.addActionListener(this);
+         jButton4.addActionListener(this);
+         jButton5.addActionListener(this);
 
         jLabel2.setIcon(new javax.swing.ImageIcon("src//view//photo//Batminton//18.jpg")); // NOI18N
         jPanel1.add(jLabel2);
@@ -160,11 +168,14 @@ public class Batminton extends javax.swing.JFrame implements ActionListener {
         jPanel1.add(jLabel13);
         jLabel13.setBounds(670, 290, 110, 20);
 
+       
+
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 255));
         jLabel1.setIcon(new javax.swing.ImageIcon("src//view//photo//Batminton//a2.jpg")); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(-1, -6, 820, 470);
+        
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -244,6 +255,23 @@ public class Batminton extends javax.swing.JFrame implements ActionListener {
             new Dashboard().setVisible(true);
             dispose();
         }
+        if (e.getSource()==jButton1){
+            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+            System.out.print("button 1");
+        }
+        if (e.getSource()==jButton2){
+            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+        }
+        if (e.getSource()==jButton3){
+            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+        }
+        if (e.getSource()==jButton4){
+            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+        }
+        if (e.getSource()==jButton5){
+            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+        }
     }
+
     // End of variables declaration
 }

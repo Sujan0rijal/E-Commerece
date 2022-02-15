@@ -276,13 +276,13 @@ public class Basketball extends javax.swing.JFrame implements ActionListener {
         if (e.getSource()==jButton2){
             JOptionPane.showConfirmDialog(null,"do you want to print the bill");
         }
-        if (e.getSource()==jButton2){
+        if (e.getSource()==jButton3){
             JOptionPane.showConfirmDialog(null,"do you want to print the bill");
         }
-        if (e.getSource()==jButton2){
+        if (e.getSource()==jButton4){
             JOptionPane.showConfirmDialog(null,"do you want to print the bill");
         }
-        if (e.getSource()==jButton2){
+        if (e.getSource()==jButton5){
             JOptionPane.showConfirmDialog(null,"do you want to print the bill");
         }
     }
