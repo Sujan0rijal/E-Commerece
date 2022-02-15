@@ -11,11 +11,11 @@ E-commerce is the buying and selling of goods and services,or the trasmitting of
 The primary goal of E-commerce is to reach maximum customers at the right time to increase sales and profitability of the business.
 
 # Features of E-commerce 
--Large Customer Reach. 
--Univeral Standard.
--Rich in content and information.
--Easy to use the checkout.
--Interactive platform.
+- Large Customer Reach. 
+- Univeral Standard.
+- Rich in content and information.
+- Easy to use the checkout.
+- Interactive platform.
 
 # Group Name                  {Role}
 - Rijan Dotel               [Scrum Master/Designer]  
