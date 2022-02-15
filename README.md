@@ -18,11 +18,11 @@ The primary goal of E-commerce is to reach maximum customers at the right time t
 -Interactive platform.
 
 # Group Name                  {Role}
--Rijan Dotel               [Scrum Master/Designer]  
--Sujan Rijal               [Developer/Designer]
--Sagar Khadka              [Developer]
--Prashant Deshar           [Developer]
--Ramesh Budha              [Developer/Tester]
+- Rijan Dotel               [Scrum Master/Designer]  
+- Sujan Rijal               [Developer/Designer]
+- Sagar Khadka              [Developer]
+- Prashant Deshar           [Developer]
+- Ramesh Budha              [Developer/Tester]
 
 # Trello link 
 https://trello.com/b/f9mFteRj/e-commerce
