@@ -92,6 +92,13 @@ public class Table_tennis extends javax.swing.JFrame implements ActionListener {
                 ballActionPerformed(evt);
             }
         });
+          //Added button listner
+          jersey.addActionListener(this);
+          gloves.addActionListener(this);
+          sock.addActionListener(this);
+          ball.addActionListener(this);
+          pad.addActionListener(this);
+          shoe.addActionListener(this);
         jPanel1.add(ball);
         ball.setBounds(300, 190, 60, 23);
 
@@ -234,6 +241,26 @@ public class Table_tennis extends javax.swing.JFrame implements ActionListener {
             new Dashboard().setVisible(true);
             dispose();
         }
+        if (e.getSource()==ball){
+            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+            System.out.print("button 1");
+        }
+        if (e.getSource()==gloves){
+            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+        }
+        if (e.getSource()==jersey){
+            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+        }
+        if (e.getSource()==shoe){
+            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+        }
+        if (e.getSource()==pad){
+            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+        }
+        if (e.getSource()==sock){
+            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+        }
+
     }
     // End of variables declaration
 }

@@ -7,6 +7,8 @@ package View;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author ASUS
@@ -57,6 +59,13 @@ public class  Football extends javax.swing.JFrame implements ActionListener {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setLayout(null);
+          //Added button listner
+          jButton1.addActionListener(this);
+          jButton2.addActionListener(this);
+          jButton3.addActionListener(this);
+          jButton4.addActionListener(this);
+          jButton6.addActionListener(this);
+          jButton7.addActionListener(this);
 
         jLabel2.setIcon(new javax.swing.ImageIcon("src//view//photo//Football//fd.jpg")); // NOI18N
         jPanel1.add(jLabel2);
@@ -296,6 +305,25 @@ public class  Football extends javax.swing.JFrame implements ActionListener {
         if(e.getSource()== Backbutton){
             new Dashboard().setVisible(true);
             dispose();
+        }
+        if (e.getSource()==jButton1){
+            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+            System.out.print("button 1");
+        }
+        if (e.getSource()==jButton2){
+            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+        }
+        if (e.getSource()==jButton3){
+            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+        }
+        if (e.getSource()==jButton4){
+            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+        }
+        if (e.getSource()==jButton6){
+            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+        }
+        if (e.getSource()==jButton7){
+            JOptionPane.showConfirmDialog(null, "do you want to print the bill");
         }
     }
 
