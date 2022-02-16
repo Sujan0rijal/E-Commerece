@@ -7,6 +7,7 @@ package View;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+
 import javax.swing.JOptionPane;
 
 /**
@@ -262,6 +263,7 @@ public class Basketball extends javax.swing.JFrame implements ActionListener {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -271,7 +273,7 @@ public class Basketball extends javax.swing.JFrame implements ActionListener {
         }
         if (e.getSource()==jButton1){
             JOptionPane.showConfirmDialog(null,"do you want to print the bill");
-            System.out.print("button 1");
+            
         }
         if (e.getSource()==jButton2){
             JOptionPane.showConfirmDialog(null,"do you want to print the bill");

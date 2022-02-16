@@ -1,6 +1,9 @@
 {
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "c:\\Users\\Dell\\Desktop\\Browser_download\\mysql-connector-java-8.0.27\\mysql-connector-java-8.0.27\\mysql-connector-java-8.0.27.jar"
+        "c:\\Users\\Dell\\Desktop\\Browser_download\\mysql-connector-java-8.0.27\\mysql-connector-java-8.0.27\\mysql-connector-java-8.0.27.jar",
+        "c:\\Users\\Dell\\Desktop\\javalibaries\\itextpdf-5.1.0-sources.jar\\itextpdf-5.1.0-sources.jar",
+        "c:\\Users\\Dell\\Desktop\\javalibaries\\mysql-connector-java-8.0.27\\mysql-connector-java-8.0.27\\mysql-connector-java-8.0.27.jar",
+        "c:\\Users\\Dell\\Desktop\\javalibaries\\itextpdf-5.4.1.jar\\itextpdf-5.4.1.jar"
     ]
 }
