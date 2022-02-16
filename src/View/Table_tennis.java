@@ -5,8 +5,17 @@
 package View;
 
 import javax.swing.*;
+
+import com.itextpdf.text.Document;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.Phrase;
+import com.itextpdf.text.pdf.PdfPCell;
+import com.itextpdf.text.pdf.PdfPTable;
+import com.itextpdf.text.pdf.PdfWriter;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.FileOutputStream;
 
 /**
  *
@@ -242,23 +251,276 @@ public class Table_tennis extends javax.swing.JFrame implements ActionListener {
             dispose();
         }
         if (e.getSource()==ball){
-            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
-            System.out.print("button 1");
+            JOptionPane.showMessageDialog(null,"check your bill");
+            try{//creating file name
+                String file_name = "C:\\Users\\Dell\\Desktop\\Bill\\customerBill.pdf";
+                Document document = new Document();
+                PdfWriter.getInstance(document,new FileOutputStream(file_name));
+                document.open();
+                //Add the content
+    
+                Paragraph para1 = new Paragraph("Customer Bill");
+                document.add(para1);
+                Paragraph para2 = new Paragraph("******************************************************************");
+                document.add(para2);
+                Paragraph para3 = new Paragraph("Customer name = Yankee");
+                document.add(para3);
+                Paragraph para4 = new Paragraph("                      ");
+                document.add(para4);
+    
+                //Add table
+                PdfPTable table=new PdfPTable(3);
+                PdfPCell c1 = new PdfPCell(new Phrase("Product"));
+                table.addCell(c1);
+    
+                c1 = new PdfPCell(new Phrase("Quantity"));
+                table.addCell(c1);
+    
+                c1 = new PdfPCell(new Phrase("Price"));
+                table.addCell(c1);
+    
+            //column1
+               table.addCell("Ball");
+               //Column2
+               table.addCell("1");
+               //Column3
+               table.addCell("1000");
+         
+    
+                document.add(table);
+    
+                document.close();
+                
+            }catch(Exception e1){
+                System.err.println(e1);
+            }
+            
+           
         }
         if (e.getSource()==gloves){
-            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+            JOptionPane.showMessageDialog(null,"Check your bill");
+            try{//creating file name
+                String file_name = "C:\\Users\\Dell\\Desktop\\Bill\\customerBill.pdf";
+                Document document = new Document();
+                PdfWriter.getInstance(document,new FileOutputStream(file_name));
+                document.open();
+                //Add the content
+    
+                Paragraph para1 = new Paragraph("Customer Bill");
+                document.add(para1);
+                Paragraph para2 = new Paragraph("******************************************************************");
+                document.add(para2);
+                Paragraph para3 = new Paragraph("Customer name = Yankee");
+                document.add(para3);
+                Paragraph para4 = new Paragraph("                      ");
+                document.add(para4);
+    
+                //Add table
+                PdfPTable table=new PdfPTable(3);
+                PdfPCell c1 = new PdfPCell(new Phrase("Product"));
+                table.addCell(c1);
+    
+                c1 = new PdfPCell(new Phrase("Quantity"));
+                table.addCell(c1);
+    
+                c1 = new PdfPCell(new Phrase("Price"));
+                table.addCell(c1);
+    
+            //column1
+               table.addCell("Bat");
+               //Column2
+               table.addCell("1");
+               //Column3
+               table.addCell("1000");
+         
+    
+                document.add(table);
+    
+                document.close();
+                
+            }catch(Exception e1){
+                System.err.println(e1);
+            }
         }
         if (e.getSource()==jersey){
-            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+            JOptionPane.showMessageDialog(null,"Check your bill");
+            try{//creating file name
+                String file_name = "C:\\Users\\Dell\\Desktop\\Bill\\customerBill.pdf";
+                Document document = new Document();
+                PdfWriter.getInstance(document,new FileOutputStream(file_name));
+                document.open();
+                //Add the content
+    
+                Paragraph para1 = new Paragraph("Customer Bill");
+                document.add(para1);
+                Paragraph para2 = new Paragraph("******************************************************************");
+                document.add(para2);
+                Paragraph para3 = new Paragraph("Customer name = Yankee");
+                document.add(para3);
+                Paragraph para4 = new Paragraph("                      ");
+                document.add(para4);
+    
+                //Add table
+                PdfPTable table=new PdfPTable(3);
+                PdfPCell c1 = new PdfPCell(new Phrase("Product"));
+                table.addCell(c1);
+    
+                c1 = new PdfPCell(new Phrase("Quantity"));
+                table.addCell(c1);
+    
+                c1 = new PdfPCell(new Phrase("Price"));
+                table.addCell(c1);
+    
+            //column1
+               table.addCell("jersery");
+               //Column2
+               table.addCell("1");
+               //Column3
+               table.addCell("1000");
+         
+    
+                document.add(table);
+    
+                document.close();
+                
+            }catch(Exception e1){
+                System.err.println(e1);
+            }
         }
         if (e.getSource()==shoe){
-            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+            JOptionPane.showMessageDialog(null,"Check your bill");
+            try{//creating file name
+                String file_name = "C:\\Users\\Dell\\Desktop\\Bill\\customerBill.pdf";
+                Document document = new Document();
+                PdfWriter.getInstance(document,new FileOutputStream(file_name));
+                document.open();
+                //Add the content
+    
+                Paragraph para1 = new Paragraph("Customer Bill");
+                document.add(para1);
+                Paragraph para2 = new Paragraph("******************************************************************");
+                document.add(para2);
+                Paragraph para3 = new Paragraph("Customer name = Yankee");
+                document.add(para3);
+                Paragraph para4 = new Paragraph("                      ");
+                document.add(para4);
+    
+                //Add table
+                PdfPTable table=new PdfPTable(3);
+                PdfPCell c1 = new PdfPCell(new Phrase("Product"));
+                table.addCell(c1);
+    
+                c1 = new PdfPCell(new Phrase("Quantity"));
+                table.addCell(c1);
+    
+                c1 = new PdfPCell(new Phrase("Price"));
+                table.addCell(c1);
+    
+            //column1
+               table.addCell("Shoe");
+               //Column2
+               table.addCell("1");
+               //Column3
+               table.addCell("1000");
+         
+    
+                document.add(table);
+    
+                document.close();
+                
+            }catch(Exception e1){
+                System.err.println(e1);
+            }
         }
         if (e.getSource()==pad){
-            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+            JOptionPane.showMessageDialog(null,"Check your bill");
+            try{//creating file name
+                String file_name = "C:\\Users\\Dell\\Desktop\\Bill\\customerBill.pdf";
+                Document document = new Document();
+                PdfWriter.getInstance(document,new FileOutputStream(file_name));
+                document.open();
+                //Add the content
+    
+                Paragraph para1 = new Paragraph("Customer Bill");
+                document.add(para1);
+                Paragraph para2 = new Paragraph("******************************************************************");
+                document.add(para2);
+                Paragraph para3 = new Paragraph("Customer name = Yankee");
+                document.add(para3);
+                Paragraph para4 = new Paragraph("                      ");
+                document.add(para4);
+    
+                //Add table
+                PdfPTable table=new PdfPTable(3);
+                PdfPCell c1 = new PdfPCell(new Phrase("Product"));
+                table.addCell(c1);
+    
+                c1 = new PdfPCell(new Phrase("Quantity"));
+                table.addCell(c1);
+    
+                c1 = new PdfPCell(new Phrase("Price"));
+                table.addCell(c1);
+    
+            //column1
+               table.addCell("cap");
+               //Column2
+               table.addCell("1");
+               //Column3
+               table.addCell("1000");
+         
+    
+                document.add(table);
+    
+                document.close();
+                
+            }catch(Exception e1){
+                System.err.println(e1);
+            }
         }
         if (e.getSource()==sock){
-            JOptionPane.showConfirmDialog(null,"do you want to print the bill");
+            JOptionPane.showMessageDialog(null,"Check your Bill");
+            try{//creating file name
+                String file_name = "C:\\Users\\Dell\\Desktop\\Bill\\customerBill.pdf";
+                Document document = new Document();
+                PdfWriter.getInstance(document,new FileOutputStream(file_name));
+                document.open();
+                //Add the content
+    
+                Paragraph para1 = new Paragraph("Customer Bill");
+                document.add(para1);
+                Paragraph para2 = new Paragraph("******************************************************************");
+                document.add(para2);
+                Paragraph para3 = new Paragraph("Customer name = Yankee");
+                document.add(para3);
+                Paragraph para4 = new Paragraph("                      ");
+                document.add(para4);
+    
+                //Add table
+                PdfPTable table=new PdfPTable(3);
+                PdfPCell c1 = new PdfPCell(new Phrase("Product"));
+                table.addCell(c1);
+    
+                c1 = new PdfPCell(new Phrase("Quantity"));
+                table.addCell(c1);
+    
+                c1 = new PdfPCell(new Phrase("Price"));
+                table.addCell(c1);
+    
+            //column1
+               table.addCell("Net");
+               //Column2
+               table.addCell("1");
+               //Column3
+               table.addCell("1000");
+         
+    
+                document.add(table);
+    
+                document.close();
+                
+            }catch(Exception e1){
+                System.err.println(e1);
+            }
         }
 
     }
