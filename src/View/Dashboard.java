@@ -5,8 +5,12 @@
 package View;
 
 import javax.swing.*;
+
+
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
 
 public class Dashboard extends javax.swing.JFrame implements ActionListener {
 
@@ -190,6 +194,8 @@ public class Dashboard extends javax.swing.JFrame implements ActionListener {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
 
+
+   
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource()== Volleyball_button){
@@ -199,6 +205,7 @@ public class Dashboard extends javax.swing.JFrame implements ActionListener {
         if(e.getSource()== Back_button){
             new login().setVisible(true);
             dispose();
+           
         }
         if(e.getSource()==Football_button){
             new Football().setVisible(true);
