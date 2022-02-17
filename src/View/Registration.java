@@ -146,7 +146,7 @@ public class Registration  extends JFrame implements ActionListener {
         email = TxtEmail.getText();
         passwordkey = TxtPassword.getText();
         confirmPassword = TxtConfirmPassword.getText();
-        System.out.println(username + " " + email);
+        //System.out.println(username + " " + email);
 
         if (e.getSource() == button_back){
             new Coverpage().setVisible(true);
@@ -177,6 +177,8 @@ public class Registration  extends JFrame implements ActionListener {
                 }
                 new login().setVisible(true);
                 dispose();
+            }else{
+                JOptionPane.showMessageDialog(null,"Password does not match");
             }
 
          
